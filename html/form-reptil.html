@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Reptil</title>
+    <link rel="stylesheet" href="../css/adoption-form-reptil-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/adoption-form-reptil-style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/adoption-form.js"></script>
+</head>
+<body>
+    <!-- Navbar Start -->
+<div class="navigation-bar">
+    <nav class="navbar">
+        <div class="logo-container">
+             <img src="../img/logo-2.png" alt="Logo" class="logo">
+             <div class="site-title">
+                <span class="title-part">Pat</span>
+                <span class="ampersand">&</span>
+                <span class="title-part">Pet</span>
+             </div>
+            </div>
+            <div class="list-navigation">
+                <div class="list-btn">
+                    <button class="btn-icon" onclick="toggleCart()">
+                    <i data-feather="shopping-cart" class="large"></i>
+                    </button>
+                    <button class="btn-icon ">
+                    <i data-feather="search" class="large" id="searchBtn" onclick="toggleSearch()"></i>
+                    </button>
+                    <button class="btn-icon" id="sign-in-btn" onclick="showSignInPopup()">
+                    <i data-feather="user" class="large"></i>
+                    </button>
+                </div>
+                <ul class="nav-links">
+                    <li class="Home"><a href="home.html">HOME</a></li></a>
+                    <li class="pet-needs"><a href="PetNeeds.html">PET NEEDS</a></li>
+                    <li class="pawfund"><a href="pawfund.html">PAWFUND</a></li>
+                    <li class="getpet"><a href="Get Your Pet/get-your-pet-all-1.html">GET YOUR PET</a></li>
+                    <li class="about"><a href="AboutUs.html"> ABOUT US</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </div>
+
+    <!-- Search bar -->
+    <div class="search-container" id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="closeSearchBtn" onclick="toggleSearch()">
+        <i data-feather="x"></i>
+        </button>
+    </div>
+    <!-- End of Search bar -->
+
+    <!-- Navbar End -->
+    <div class="big-box">
+        <!-- box judul -->
+        <div class="titlebox">
+            <img src="../img/banner-ijo.png" alt="">
+        </div>
+        <div class="main-body">
+            <!-- kolom bagian kiri -->
+            <div class="side-box" id="left-box">
+                <table class="left-table table" id="img-table">
+                    <tr>
+                        <td>
+                            <img src="../img/reptil-snake.png" class="pic">
+                        </td>
+                    </tr>
+                </table>
+                <table class="left-table table" id="information-table">
+                    <tr>
+                        <th>Name</th>
+                        <td>Lily</td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <th>Breed</th>
+                        <td>Siamase cat</td>
+                    </tr>
+                    <tr>
+                        <th>Health</th>
+                        <td>Minor rash on her belly, vaccinated</td>
+                    </tr>
+                    <tr>
+                        <th>Likes</th>
+                        <td>Chewing toys, wet food</td>
+                    </tr>
+                    <tr>
+                        <th>Description</th>
+                        <td>My grandmother died and I can't keep her because of my allergy. She is really cute, she eats a
+                            lot and mischievous.</td>
+                    </tr>
+                </table>
+            </div>
+            
+
+            <!-- kolom bagian kanan -->
+            <div class="side-box" id="right-box">
+                <table class="table" id="right-table">
+                    <tr>
+                        <th>OUR STORE'S ADDRESS</th>
+                    </tr>
+                    <tr>
+                        <td>Jl. Tanjung Duren Timur 6 No.217, RT.7/RW.3, Tj. Duren Sel, Kec. Grogol petamburan, Kota Jakarta
+                            Barat, Daerah Khusus Ibukota Jakarta 11470</td>
+                    </tr>
+                    <tr>
+                        <th>PICK UP TIME</th>
+                    </tr>
+                    <tr>
+                        <td>DATE: FRIDAY, 25TH JUNE 2024 <br>
+                            TIME: 09.00 - 17.00</td>
+                    </tr>
+                    <tr>
+                        <th>PET NEEDS</th>
+                    </tr>
+                    <tr id="petneedsBox">
+                        <td id="petNeeds-coloumn">
+                            <p>Wet Food</p>
+                            <p>Harness</p>
+                            <p>Cage</p>
+                            <p>Clothes</p>
+                            <div class="buy">
+                                <a href="../html/PetNeeds.html" id="buyBtn">
+                                    Buy?
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- tombol untuk ke halaman sebelumnya -->
+            <a href="../html/adoption-form-reptil.html" class="btn">
+                <img src="../img/Right-arrow.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer-box">
+        <img src="../img/footer-ijo.png" alt="">
+    </div>
+</body>
+</html>

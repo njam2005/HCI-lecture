@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Needs</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lexend Exa' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+    <!-- Feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../javascript/script.js"></script>
+
+    <!-- My CSS Style  -->
+    <link rel="stylesheet" href="../css/headerStyle.css">
+    <link rel="stylesheet" href="../css/contentStyle.css">
+</head>
+<body>
+    
+<!-- Navbar Start -->
+<div class="navigation-bar">
+    <nav class="navbar">
+        <div class="logo-container">
+             <img src="../img/Logo 1.png" alt="Logo" class="logo">
+             <div class="site-title">
+                <span class="title-part">Pat</span>
+                <span class="ampersand">&</span>
+                <span class="title-part">Pet</span>
+             </div>
+        </div>
+        <div class="list-navigation">
+            <div class="list-btn">
+                <button class="btn-icon" onclick="toggleCart()">
+                <i data-feather="shopping-cart" class="large"></i>
+                </button>
+                <button class="btn-icon ">
+                <i data-feather="search" class="large" id="searchBtn" onclick="toggleSearch()"></i>
+                </button>
+                <button class="btn-icon" id="sign-in-btn" onclick="showSignInPopup()">
+                <i data-feather="user" class="large"></i>
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li class="Home"><a href="home.html">HOME</a></li></a>
+                <li class="pet-needs"><a href="PetNeeds.html">PET NEEDS</a></li>
+                <li class="pawfund"><a href="pawfund.html">PAWFUND</a></li>
+                <li class="getpet"><a href="Get Your Pet/get-your-pet-all-1.html">GET YOUR PET</a></li>
+                <li class="about"><a href="AboutUs.html"> ABOUT US</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+</div>
+
+<!-- Search bar -->
+<div class="search-container" id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="closeSearchBtn" onclick="toggleSearch()">
+      <i data-feather="x"></i>
+    </button>
+  </div>
+  <!-- End of Search bar -->
+
+<!-- Navbar End -->
+
+<!-- content -->
+<div class="content">
+    <div class="container-content">
+        <button class="menu-button" data-target="dropdown1">Pet Food <i data-feather="chevron-down"></i></button>
+        <div id="dropdown1" class="dropdown-content">
+            <a href="#" class="filter" data-category="cat">Cat Food</a>
+            <a href="#" class="filter" data-category="dog">Dog Food</a>
+            <a href="#" class="filter" data-category="chameleon">Chameleon Food</a>
+            <a href="#" class="filter" data-category="snake">Snake Food</a>
+            <a href="#" class="filter" data-category="hamster">Hamster Food</a>
+        </div>
+        <button class="menu-button" data-target="dropdown2">Pet Accessories <i data-feather="chevron-down"></i></button>
+        <div id="dropdown2" class="dropdown-content">
+            <a href="#" class="filter" data-category="cat-accessories">Cat Accessories</a>
+            <a href="#" class="filter" data-category="dog-accessories">Dog Accessories</a>
+            <a href="#" class="filter" data-category="chameleon-accessories">Chameleon Accessories</a>
+            <a href="#" class="filter" data-category="snake-accessories">Snake Accessories</a>
+            <a href="#" class="filter" data-category="hamster-accessories">Hamster Accessories</a>
+        </div>
+
+        <a href="#" class="menu-button filter" data-category="cage">Pet Cage</a>
+
+        <button class="menu-button" data-target="dropdown4">Pet Toy <i data-feather="chevron-down"></i></button>
+        <div id="dropdown4" class="dropdown-content">
+            <a href="#" class="filter" data-category="cat-toys">Cat Toys</a>
+            <a href="#" class="filter" data-category="dog-toys">Dog Toys</a>
+            <a href="#" class="filter" data-category="hamster-toys">Hamster Toys</a>
+        </div>
+        <a href="#" class= "menu-button filter" data-category="all">All</a>
+    </div>
+
+
+    <div class="list-makanan">
+        <!-- cat -->
+
+        <div class="container-makanan" data-name="Friskies Pate Wet Cat Food" data-price="40000" data-category="cat" >
+            <a href="description.html"><img class="gambar1" src="../img/image 3.svg" alt="" ></a>
+            <p class="merek">Friskies Pate Wet Cat Food with Beef and Liver</p>
+            <p class="harga">Rp40.000,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Friskies Farm Pate Wet Cat Food with Salmon" data-price="45500" data-category="cat">
+            <img class="gambar1" src="../img/image 4.svg" alt="" >
+            <p class="merek">Friskies Farm Pate Wet Cat Food with Salmon</p>
+            <p class="harga">Rp45.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Friskies Classic Pate with Chicken & Tuna Dinner" data-price="43750" data-category="cat">
+            <img class="gambar1" src="../img/image 5.svg" alt="">
+            <p class="merek">Friskies Classic Pate with Chicken & Tuna Dinner</p>
+            <p class="harga">Rp43.750,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Friskies Farm Favorites Pate with Chicken & Carrots" data-price="43750" data-category="cat">
+            <img class="gambar1" src="../img/image 6.svg" alt="">
+            <p class="merek">Friskies Farm Favorites Pate with Chicken & Carrots</p>
+            <p class="harga">Rp43.750,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Whiskas Junior Cat Food Ocean Fish with Milk 1.1 kg" data-price="125600" data-category="cat">
+            <img class="gambar1" src="../img/image 7.svg" alt="">
+            <p class="merek">Whiskas Junior Cat Food Ocean Fish with Milk 1.1 kg</p>
+            <p class="harga">Rp125.600,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Whiskas Adult Cat Food Tuna 1.1 kg" data-price="132450" data-category="cat">
+            <img class="gambar1" src="../img/image 8.svg" alt="">
+            <p class="merek">Whiskas Adult Cat Food Tuna 1.1 kg</p>
+            <p class="harga">Rp132.450,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Whiskas Canned in Jelly with Chicken 390 gr for 1+ Years Old Cat" data-price="56500" data-category="cat">
+            <img class="gambar1" src="../img/image 9.svg" alt="">
+            <p class="merek">Whiskas Canned in Jelly with Chicken 390 gr for 1+ Years Old Cat</p>
+            <p class="harga">Rp56.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Whiskas Tasty Filled Pockets with Chicken 825 gr for 1+ Years Cat" data-price="75400" data-category="cat">
+            <img class="gambar1" src="../img/image 10.svg" alt="">
+            <p class="merek">Whiskas Tasty Filled Pockets with Chicken 825 gr for 1+ Years Cat</p>
+            <p class="harga">Rp75.400,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="MeowMix Classic Pate Wet Food Variety Pack" data-price="230575" data-category="cat">
+            <img class="gambar1" src="../img/image 11.svg" alt="">
+            <p class="merek">MeowMix Classic Pate Wet Food Variety Pack</p>
+            <p class="harga">Rp230.575,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="MeowMix Original Choice" data-price="123435" data-category="cat">
+            <img class="gambar1" src="../img/image 12.svg" alt="">
+            <p class="merek">MeowMix Original Choice</p>
+            <p class="harga">Rp123.435,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="MeowMix Bistro Recipes Grilled Salmon Flavor with Real Salmon 1.36 kg" data-price="189500" data-category="cat">
+            <img class="gambar1" src="../img/image 13.svg" alt="">
+            <p class="merek">MeowMix Bistro Recipes Grilled Salmon Flavor with Real Salmon 1.36 kg</p>
+            <p class="harga">Rp189.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Whiskas Tasty Fillled Pockets with Chicken 825 gr for 7+ Years Old Cat" data-price="78500" data-category="cat">
+            <img class="gambar1" src="../img/image 15.svg" alt="">
+            <p class="merek">Whiskas Tasty Fillled Pockets with Chicken 825 gr for 7+ Years Old Cat</p>
+            <p class="harga">Rp78.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Whiskas Kitten Tasty Filled Pockets with Chicken and Milk 340 gr" data-price="45675" data-category="cat">
+            <img class="gambar1" src="../img/image 16.svg" alt="">
+            <p class="merek">Whiskas Kitten Tasty Filled Pockets with Chicken and Milk 340 gr</p>
+            <p class="harga">Rp45.675,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Whiskas Kitten Food Chicken and Tuna Flavour 1 kg" data-price="125000" data-category="cat">
+            <img class="gambar1" src="../img/image 17.svg" alt="">
+            <p class="merek">Whiskas Kitten Food Chicken and Tuna Flavour 1 kg</p>
+            <p class="harga">Rp125.000,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- dog -->
+        <div class="container-makanan" data-name="Pedigree Adult Dry Dog Food Meat and Rice 10 kg" data-price="315550" data-category="dog">
+            <img class="gambar2" src="../img/image 19.svg" alt="">
+            <p class="merek">Pedigree Adult Dry Dog Food Meat and Rice 10 kg</p>
+            <p class="harga">Rp315.550,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Pedigree Puppy Dry Dog Food Chicken and Milk 3 kg" data-price="135450" data-category="dog">
+            <img class="gambar2" src="../img/image 20.svg" alt="">
+            <p class="merek">Pedigree Puppy Dry Dog Food Chicken and Milk 3 kg</p>
+            <p class="harga">Rp135.450,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Pedigree Pro Puppy Large Breed Dry Dog Food 3 kg" data-price="275600" data-category="dog">
+            <img class="gambar2" src="../img/image 21.svg" alt="">
+            <p class="merek">Pedigree Pro Puppy Large Breed Dry Dog Food 3 kg</p>
+            <p class="harga">Rp275.600,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Pedigree Pro Adult Large Breed Dry Dog Food 3 kg" data-price="325475" data-category="dog">
+            <img class="gambar2" src="../img/image 22.svg" alt="">
+            <p class="merek">Pedigree Pro Adult Large Breed Dry Dog Food 3 kg</p>
+            <p class="harga">Rp325.475,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Bakers Adult Dry Dog Food with Beef & County Vegetables 12 kg" data-price="495000" data-category="dog">
+            <img class="gambar2" src="../img/image 23.svg" alt="">
+            <p class="merek">Bakers Adult Dry Dog Food with Beef & County Vegetables 12 kg</p>
+            <p class="harga">Rp495.000,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Bakers Puppy Dry Dog Food with Chicken & County Vegetables 2.85 kg" data-price="124000" data-category="dog">
+            <img class="gambar2" src="../img/image 24.svg" alt="">
+            <p class="merek">Bakers Puppy Dry Dog Food with Chicken & County Vegetables 2.85 kg</p>
+            <p class="harga">Rp124.400,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Bakers Small Dog Sensitive Tummy Dry Food with Chicken & County Vegetables 2.7 kg" data-price="156670" data-category="dog">
+            <img class="gambar2" src="../img/image 25.svg" alt="">
+            <p class="merek">Bakers Small Dog Sensitive Tummy Dry Food with Chicken & County Vegetables 2.7 kg</p>
+            <p class="harga">Rp156.670,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Bakers Small Dog Dry Food with Chicken & County Vegetables 2.7 kg" data-price="137520" data-category="dog">
+            <img class="gambar2" src="../img/image 26.svg" alt="">
+            <p class="merek">Bakers Small Dog Dry Food with Chicken & County Vegetables 2.7 kg</p>
+            <p class="harga">Rp137.520,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Purina Pro Plan Adult Sensitive Skin & Stomach with Salmon & Rice 13.5 kg" data-price="537950" data-category="dog">
+            <img class="gambar2" src="../img/image 27.svg" alt="">
+            <p class="merek">Purina Pro Plan Adult Sensitive Skin & Stomach with Salmon & Rice 13.5 kg</p>
+            <p class="harga">Rp537.950,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Purina Pro Plan Adult Small & Mini with Sensitive Skin with Salmon 5.5 kg" data-price="234500" data-category="dog">
+            <img class="gambar2" src="../img/image 28.svg" alt="">
+            <p class="merek">Purina Pro Plan Adult Small & Mini with Sensitive Skin with Salmon 5.5 kg</p>
+            <p class="harga">Rp234.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Purina Pro Plan Puppy Large Athletic with Chicken 12 kg" data-price="547670" data-category="dog">
+            <img class="gambar2" src="../img/image 29.svg" alt="">
+            <p class="merek">Purina Pro Plan Puppy Large Athletic with Chicken 12 kg</p>
+            <p class="harga">Rp547.670,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Purina Pro Plan Adult Large Athletic with Chicken 14+2.5 kg" data-price="628320" data-category="dog">
+            <img class="gambar2" src="../img/image 30.svg" alt="">
+            <p class="merek">Purina Pro Plan Adult Large Athletic with Chicken 14+2.5 kg</p>
+            <p class="harga">Rp628.320,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Pure Balance Dry Dog Food with Chicken & Pea 10.9 kg" data-price="564280" data-category="dog">
+            <img class="gambar2" src="../img/image 31.svg" alt="">
+            <p class="merek">Pure Balance Dry Dog Food with Chicken & Pea 10.9 kg</p>
+            <p class="harga">Rp564.280,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Pure Balance Puppy Dry Dog Food with Chicken & Rice 2.27 kg" data-price="139360" data-category="dog">
+            <img class="gambar2" src="../img/image 32.svg" alt="">
+            <p class="merek">Pure Balance Puppy Dry Dog Food with Chicken & Rice 2.27 kg</p>
+            <p class="harga">Rp139.360,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+
+
+        <!-- chamelon -->
+        <div class="container-makanan" data-name="Cricket Bites Roasted 10 g" data-price="35460" data-category="chameleon">
+            <img class="gambar5" src="../img/image 34.svg" alt="">
+            <p class="merek">Cricket Bites Roasted 10 g</p>
+            <p class="harga">Rp35.460,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="ecoEat Seasoned Crickets Tom Yum Flavor 25 gr" data-price=80500" data-category="chameleon">
+            <img class="gambar5" src="../img/image 35.svg" alt="">
+            <p class="merek">ecoEat Seasoned Crickets Tom Yum Flavor 25 gr</p>
+            <p class="harga">Rp80.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Erbies Mixed Bugs 15 gr" data-price="58340" data-category="chameleon">
+            <img class="gambar5" src="../img/image 36.svg" alt="">
+            <p class="merek">Erbies Mixed Bugs 15 gr</p>
+            <p class="harga">Rp58.340,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="ecoEat Mixed Bugs 15 gr" data-price="49980" data-category="chameleon">
+            <img class="gambar5" src="../img/image 37.svg" alt="">
+            <p class="merek">ecoEat Mixed Bugs 15 gr</p>
+            <p class="harga">Rp49.980,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="ecoEat Jungle Trial Mix 11 gr" data-price="37570" data-category="chameleon">
+            <img class="gambar5" src="../img/image 38.svg" alt="">
+            <p class="merek">ecoEat Jungle Trial Mix 11 gr</p>
+            <p class="harga">Rp37.570,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="ecoEat Big Crickets 15 gr" data-price="54880" data-category="chameleon">
+            <img class="gambar5" src="../img/image 39.svg" alt="">
+            <p class="merek">ecoEat Big Crickets 15 gr</p>
+            <p class="harga">Rp54.880,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="ecoEat Giant Crickets 15 gr" data-price="60880" data-category="chameleon">
+            <img class="gambar5" src="../img/image 40.svg" alt="">
+            <p class="merek">ecoEat Giant Crickets 15 gr</p>
+            <p class="harga">Rp60.880,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="ecoEat Cricket Mix 15 gr" data-price="55450" data-category="chamelon">
+            <img class="gambar5" src="../img/image 41.svg" alt="">
+            <p class="merek">ecoEat Cricket Mix 15 gr</p>
+            <p class="harga">Rp55.450,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- snake -->
+        <div class="container-makanan" data-name="Mack’s 10 Frozen Hopper/Small Mice" data-price="368560" data-category="snake">
+            <img class="gambar5" src="../img/image 42.svg" alt="">
+            <p class="merek">Mack’s 10 Frozen Hopper/Small Mice</p>
+            <p class="harga">Rp368.560,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Mack’s 8 Frozen Large Rats" data-price="450430" data-category="snake">
+            <img class="gambar5" src="../img/image 43.svg" alt="">
+            <p class="merek">Mack’s 8 Frozen Large Rats</p>
+            <p class="harga">Rp450.430,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Mack’s 25 Frozen Small Rats" data-price="667800" data-category="snake">
+            <img class="gambar5" src="../img/image 44.svg" alt="">
+            <p class="merek">Mack’s 25 Frozen Small Rats</p>
+            <p class="harga">Rp667.800,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Mack’s 10 Frozen Fuzzy Rats" data-price="650400" data-category="snake">
+            <img class="gambar5" src="../img/image 45.svg" alt="">
+            <p class="merek">Mack’s 10 Frozen Fuzzy Rats</p>
+            <p class="harga">Rp650.400,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- hamster -->
+        <div class="container-makanan" data-name="Menu Premium Hamster Food Sunflower Seed Blend 907 gr" data-price="64800" data-category="hamster">
+            <img class="gambar5" src="../img/image 50.svg" alt="">
+            <p class="merek">Menu Premium Hamster Food Sunflower Seed Blend 907 gr</p>
+            <p class="harga">Rp64.800,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Menu Vital Hamster Food 1 kg" data-price="65400" data-category="hamster">
+            <img class="gambar5" src="../img/image 51.svg" alt="">
+            <p class="merek">Menu Vital Hamster Food 1 kg</p>
+            <p class="harga">Rp65.400,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <div class="container-makanan" data-name="Versele-Laga Nature Hamster Food 700 gr" data-price="78330" data-category="hamster">
+            <img class="gambar5" src="../img/image 53.svg" alt="">
+            <p class="merek">Versele-Laga Nature Hamster Food 700 gr</p>
+            <p class="harga">Rp78.330,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Vitakraft Vita Smart Hamster Food 907 gr" data-price="69560" data-category="hamster">
+            <img class="gambar5" src="../img/image 52.svg" alt="">
+            <p class="merek">Vitakraft Vita Smart Hamster Food 907 gr</p>
+            <p class="harga">Rp69.560,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- hamster -->
+
+        <!-- cat-accesories -->
+        <div class="container-makanan" data-name="Cat Necklace Black Custom Name & Charm" data-price="65600" data-category="cat-accessories">
+            <img class="gambar5" src="../img/image 61.svg" alt="">
+            <p class="merek">Cat Necklace Black Custom Name & Charm</p>
+            <p class="harga">Rp65.600,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Cat Necklace Midnight Moon & Star with Small Bell - Custom Name" data-price="67400" data-category="cat-accessories">
+            <img class="gambar5" src="../img/image 62.svg" alt="">
+            <p class="merek">Cat Necklace Midnight Moon & Star with Small Bell - Custom Name</p>
+            <p class="harga">Rp67.400,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Mocha Leather Cat Collar - Custom Name & Free Random Charm" data-price="89560" data-category="cat-accessories">
+            <img class="gambar5" src="../img/image 63.svg" alt="">
+            <p class="merek">Mocha Leather Cat Collar - Custom Name & Free Random Charm</p>
+            <p class="harga">Rp89.560,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Plain Adjustable Leather Cat Collar - Custom Name & Free Bell" data-price="93440" data-category="cat-accessories">
+            <img class="gambar5" src="../img/image 64.svg" alt="">
+            <p class="merek">Plain Adjustable Leather Cat Collar - Custom Name & Free Bell</p>
+            <p class="harga">Rp93.440,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Dinosaur Cat Clothes" data-price="125500" data-category="cat-accesories">
+            <img class="gambar5" src="../imgimage 65.svg" alt="">
+            <p class="merek">Dinosaur Cat Clothes</p>
+            <p class="harga">Rp125.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Knitted Gray Sweater Cat Clothes" data-price="176980" data-category="cat-accesories">
+            <img class="gambar5" src="../img/image 66.svg" alt="">
+            <p class="merek">Knitted Gray Sweater Cat Clothes</p>
+            <p class="harga">Rp176.980,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="CatRomance Black Breathable Mesh Cat Walking Harness" data-price="188500" data-category="cat-accessories">
+            <img class="gambar5" src="../img/image 67.svg" alt="">
+            <p class="merek">CatRomance Black Breathable Mesh Cat Walking Harness</p>
+            <p class="harga">Rp188.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="rabbitGoo Adjustable Vest Cat Harness" data-price="157400" data-category="cat-accessories">
+            <img class="gambar5" src="../img/image 68.svg" alt="">
+            <p class="merek">rabbitGoo Adjustable Vest Cat Harness</p>
+            <p class="harga">Rp157.400,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- dog accesories -->
+        <div class="container-makanan" data-name="Flexi Classic Tape Retractable Dog Leash Medium 5 m" data-price="215380" data-category="dog-accessories">
+            <img class="gambar5" src="../img/image 77.svg" alt="">
+            <p class="merek">Flexi Classic Tape Retractable Dog Leash Medium 5 m</p>
+            <p class="harga">Rp215.380,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Heavy Duty Black Dog Leash - 2 Handles for Extra Control" data-price="254235" data-category="dog-accessories">
+            <img class="gambar5" src="../img/image 78.svg" alt="">
+            <p class="merek">Heavy Duty Black Dog Leash - 2 Handles for Extra Control</p>
+            <p class="harga">Rp254.235,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Classic Leather Dog Collar" data-price="232500" data-category="dog-accessories">
+            <img class="gambar5" src="../img/image 79.svg" alt="">
+            <p class="merek">Classic Leather Dog Collar</p>
+            <p class="harga">Rp232.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Classic Leather Dog Collar with Custom Name" data-price="245500" data-category="dog-accessories">
+            <img class="gambar5" src="../img/image 80.svg" alt="">
+            <p class="merek">Classic Leather Dog Collar with Custom Name</p>
+            <p class="harga">Rp245.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- chamelon accesories -->
+        <div class="container-makanan" data-name="REPTIBREEZE Chameleon Kit" data-price="256300" data-category="chameleon-accessories">
+            <img class="gambar5" src="../img/image 33.svg" alt="">
+            <p class="merek">REPTIBREEZE Chameleon Kit</p>
+            <p class="harga">Rp256.300,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- snake accfesories -->
+        <div class="container-makanan" data-name="Cute Snake Bunny Hat" data-price="25500" data-category="snake-accessories">
+            <img class="gambar5" src="../img/image 92.svg" alt="">
+            <p class="merek">Cute Snake Bunny Hat </p>
+            <p class="harga">Rp25.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Cute Snake Unicorn Hat " data-price="25500" data-category="snake-accessories">
+            <img class="gambar5" src="../img/image 94.svg" alt="">
+            <p class="merek">Cute Snake Unicorn Hat </p>
+            <p class="harga">Rp25.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Cool Snake Viking Hat" data-price="27500" data-category="snake-accessories">
+            <img class="gambar5" src="../img/image 95.svg" alt="">
+            <p class="merek">Cool Snake Viking Hat </p>
+            <p class="harga">Rp27.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Rock n Roll Snake Blue Punk Hair Hat " data-price="24500" data-category="snake-accessories">
+            <img class="gambar5" src="../img/image 97.svg" alt="">
+            <p class="merek">Rock n Roll Snake Blue Punk Hair Hat </p>
+            <p class="harga">Rp24.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- hamster accsesories -->
+        <div class="container-makanan" data-name="Light Blue Colorful Polkadot Triangle Hamster Bed" data-price="57800" data-category="hamster-accessories">
+            <img class="gambar5" src="../img/image 106.svg" alt="">
+            <p class="merek">Light Blue Colorful Polkadot Triangle Hamster Bed</p>
+            <p class="harga">Rp57.800,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Pink Bunny Hamster Bed" data-price="59300" data-category="hamster-accessories">
+            <img class="gambar5" src="../img/image 107.svg" alt="">
+            <p class="merek">Pink Bunny Hamster Bed</p>
+            <p class="harga">Rp59.300,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Yellow Chicken Hamster Bed" data-price="55320" data-category="hamster-accessories">
+            <img class="gambar5" src="../img/image 108.svg" alt="">
+            <p class="merek">Yellow Chicken Hamster Bed</p>
+            <p class="harga">Rp55.320,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="2-Stories Hamster House" data-price="85240" data-category="hamster-accessories">
+            <img class="gambar5" src="../img/image 109.svg" alt="">
+            <p class="merek">2-Stories Hamster House</p>
+            <p class="harga">Rp85.240,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Mini Hamster House" data-price="76500" data-category="hamster-accessories">
+            <img class="gambar5" src="../img/image 110.svg" alt="">
+            <p class="merek">Mini Hamster House</p>
+            <p class="harga">Rp76.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- cage -->
+        <div class="container-makanan" data-name="4-Level Cat Cage" data-price="3540300" data-category="cage">
+            <img class="gambar5" src="../img/image 118.svg" alt="">
+            <p class="merek">4-Level Cat Cage</p>
+            <p class="harga">Rp3.540.300,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="3-Level Indoor Cat Cage" data-price="2440000" data-category="cage">
+            <img class="gambar5" src="../img/image 119.svg" alt="">
+            <p class="merek">3-Level Indoor Cat Cage</p>
+            <p class="harga">Rp2.440.000,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Portable Cage - Cat" data-price="534900" data-category="cage">
+            <img class="gambar5" src="../img/image 120.svg" alt="">
+            <p class="merek">Portable Cage - Cat</p>
+            <p class="harga">Rp534.900,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Portable Travel Dog Crate" data-price="890450" data-category="cage">
+            <img class="gambar5" src="../img/image 121.svg" alt="">
+            <p class="merek">Portable Travel Dog Crate</p>
+            <p class="harga">Rp890.450,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Indoor Dog Cage" data-price="5675000" data-category="cage">
+            <img class="gambar5" src="../img/image 122.svg" alt="">
+            <p class="merek">Indoor Dog Cage</p>
+            <p class="harga">Rp5.675.000,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Snake Cage - Enclosure" data-price="7456000" data-category="cage">
+            <img class="gambar5" src="../img/image 123.svg" alt="">
+            <p class="merek">Snake Cage - Enclosure</p>
+            <p class="harga">Rp7.456.000,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Chameleon Terrarium 18”x18”x24”" data-price="6580000" data-category="cage">
+            <img class="gambar5" src="../img/image 124.svg" alt="">
+            <p class="merek">Chameleon Terrarium 18”x18”x24”</p>
+            <p class="harga">Rp6.580.000,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Hamster Cage" data-price="3440000" data-category="cage">
+            <img class="gambar5" src="../img/image 125.svg" alt="">
+            <p class="merek">Hamster Cage</p>
+            <p class="harga">Rp3.440.000,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- cat toy -->
+        <div class="container-makanan" data-name="Cat Scratcher" data-price="230500" data-category="cat-toys">
+            <img class="gambar5" src="../img/image 134.svg" alt="">
+            <p class="merek">Cat Scratcher</p>
+            <p class="harga">Rp230.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Cat Tree Scratcher with Hanging Toy" data-price="435450" data-category="cat-toys">
+            <img class="gambar5" src="../img/image 135.svg" alt="">
+            <p class="merek">Cat Tree Scratcher with Hanging Toy</p>
+            <p class="harga">Rp435.450,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Cat Tunnel - Cat Toy" data-price="354600" data-category="cat-toys">
+            <img class="gambar5" src="../img/image 136.svg" alt="">
+            <p class="merek">Cat Tunnel - Cat Toy</p>
+            <p class="harga">Rp354.600,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Feather Wand Cat Toy" data-price="43500" data-category="cat-toys">
+            <img class="gambar5" src="../img/image 139.svg" alt="">
+            <p class="merek">Feather Wand Cat Toy</p>
+            <p class="harga">Rp43.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- dog toys -->
+        <div class="container-makanan" data-name="Dog Toy - Interactive Food Dispenser" data-price="50500" data-category="dog-toys">
+            <img class="gambar5" src="../img/image 146.svg" alt="">
+            <p class="merek">Dog Toy - Interactive Food Dispenser</p>
+            <p class="harga">Rp50.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Dog Toy - Indestructible Chewer" data-price="56500" data-category="dog-toys">
+            <img class="gambar5" src="../img/image 147.svg" alt="">
+            <p class="merek">Dog Toy - Indestructible Chewer</p>
+            <p class="harga">Rp56.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Tough Duck Squeaky Dog Toy" data-price="61430" data-category="dog-toys">
+            <img class="gambar5" src="../img/image 148.svg" alt="">
+            <p class="merek">Tough Duck Squeaky Dog Toy</p>
+            <p class="harga">Rp61.430,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Dog Chew Suction Cup Tug of War Toy Ball for Aggressive Chewers" data-price="89350" data-category="dog-toys">
+            <img class="gambar5" src="../img/image 149.svg" alt="">
+            <p class="merek">Dog Chew Suction Cup Tug of War Toy Ball for Aggressive Chewers</p>
+            <p class="harga">Rp89.350,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+
+        <!-- hamster toy -->
+        <div class="container-makanan" data-name="Wooden Hamster Pet Seesaw Barrel Tube Tunnel - Hamster Toy" data-price="75500" data-category="hamster-toys">
+            <img class="gambar5" src="../img/image 162.svg" alt="">
+            <p class="merek">Wooden Hamster Pet Seesaw Barrel Tube Tunnel - Hamster Toy</p>
+            <p class="harga">Rp75.500,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Hamster Toy - Slider" data-price="83940" data-category="hamster-toys">
+            <img class="gambar5" src="../img/image 163.svg" alt="">
+            <p class="merek">Hamster Toy - Slider</p>
+            <p class="harga">Rp83.940,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Hamster Toy - Hamster Ball" data-price="79530" data-category="hamster-toys">
+            <img class="gambar5" src="../img/image 164.svg" alt="">
+            <p class="merek">Hamster Toy - Hamster Ball</p>
+            <p class="harga">Rp79.530,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        <div class="container-makanan" data-name="Hamster Toy - Hamster Ladder" data-price="90350" data-category="hamster-toys">
+            <img class="gambar5" src="../img/image 165.svg" alt="">
+            <p class="merek">Hamster Toy - Hamster Ladder</p>
+            <p class="harga">Rp90.350,00</p>
+            <button class="add" onclick="addToCart(this)">Add</button>
+        </div>
+        
+    </div>
+</div>
+
+
+<div id="cart" class="cart">
+    <h2>Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-actions">
+        <button onclick="toggleCart()">Cancel</button>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+<!-- Sign-In Button -->
+
+<!-- Sign-In Popup -->
+<div id="sign-in-popup" class="popup-overlay" style="display: none;">
+    <div class="popup-content">
+        <button class="close-btn" onclick="closeSignInPopup()">×</button>
+        <h2>Sign-In</h2>
+        <form id="sign-in-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+        </form>
+        <p>Don't have an account? <button onclick="showSignUpPopup()">Sign-Up</button></p>
+    </div>
+</div>
+
+<div id="sign-up-popup" class="popup-overlay" style="display: none;">
+    <div class="popup-content">
+        <button class="close-btn" onclick="closeSignUpPopup()">×</button>
+        <h2>Sign-Up</h2>
+        <form id="sign-up-form">
+            <label for="new-email">Email</label>
+            <input type="email" id="new-email" name="email" required>
+            <label for="new-password">Password</label>
+            <input type="password" id="new-password" name="password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<!-- Checkout Modal -->
+<div id="checkout-modal" class="checkout-modal">
+    <div class="checkout-content">
+        <span class="close" onclick="closeCheckout()">&times;</span>
+        <div class="checkout-section payment-method">
+            <h2>Payment Method</h2>
+            <div class="payment-options">
+                <img src="../img/Frame 169.svg" alt="">
+                <label><input type="radio" name="payment-method" value="paypal"> PayPal</label>
+                <img src="../img/Frame 170.svg" alt="">
+                <label><input type="radio" name="payment-method" value="bca"> BCA</label>
+                <img src="../img/Frame 171.svg" alt="">
+                <label><input type="radio" name="payment-method" value="bni"> BNI</label>
+            </div>
+        </div>
+        <div class="checkout-section shipping-address">
+            <h2>Shipping Address</h2>
+            <form id="shipping-form">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Province / Provinsi">
+                <input type="text" placeholder="Regency / Kabupaten">
+                <input type="text" placeholder="Sub-district / Kecamatan">
+                <input type="text" placeholder="Postal Number / Nomor Pos">
+                <input type="text" placeholder="Phone Number / Nomor Telepon">
+                <input type="text" placeholder="Detailed Address (Optional)">
+                <button type="submit">Confirm</button>
+            </form>
+        </div>
+        <div class="checkout-section cart-summary">
+            <h2>Subtotal (1 item)</h2>
+            <div id="cart-summary-items">
+                <!-- Dynamically generated cart items will go here -->
+            </div>
+            <div class="totals">
+                <p>Product x <span id="product-count">5</span> <span id="product-total">Rp1.785.000,00</span></p>
+                <p>Shipping Cost <span>Rp15.000,00</span></p>
+                <p>Handling Fees <span>Rp7.000,00</span></p>
+                <hr>
+                <p>Total <span id="cart-total">Rp1.807.000,00</span></p>
+            </div>
+            <button class="pay-button" onclick="completeCheckout()">Pay</button>
+        </div>
+    </div>
+</div>
+
+<!-- content END -->
+
+
+ <!-- Feather Icon -->
+
+ <script src="js/script.js"></script>
+ <script>
+     feather.replace();
+ </script>
+
+</body>
+</html>

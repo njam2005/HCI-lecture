@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>about us</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Exa:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../javascript/script.js"></script>
+
+    <!--  CSS Style  -->
+    <link rel="stylesheet" href="../css/aboutUsStyle.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home-content.css" />
+    <!-- <link rel="stylesheet" href="../css/headerStyle.css" /> -->
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <div class="navigation-bar">
+      <nav class="navbar">
+          <div class="logo-container">
+               <img src="../img/Logo 1.png" alt="Logo" class="logo">
+               <div class="site-title">
+                  <span class="title-part">Pat</span>
+                  <span class="ampersand">&</span>
+                  <span class="title-part">Pet</span>
+               </div>
+          </div>
+          <div class="list-navigation">
+              <div class="list-btn">
+                  <button class="btn-icon" onclick="toggleCart()">
+                  <i data-feather="shopping-cart" class="large"></i>
+                  </button>
+                  <button class="btn-icon ">
+                  <i data-feather="search" class="large" id="searchBtn" onclick="toggleSearch()"></i>
+                  </button>
+                  <button class="btn-icon" id="sign-in-btn" onclick="showSignInPopup()">
+                  <i data-feather="user" class="large"></i>
+                  </button>
+              </div>
+              <ul class="nav-links">
+                  <li class="Home"><a href="home.html">HOME</a></li></a>
+                  <li class="pet-needs1"><a href="PetNeeds.html">PET NEEDS</a></li>
+                  <li class="pawfund"><a href="pawfund.html">PAWFUND</a></li>
+                  <li class="getpet"><a href="Get Your Pet/get-your-pet-all-1.html">GET YOUR PET</a></li>
+                  <li class="about"><a href="AboutUs.html">ABOUT US</a></li>
+              </ul>
+          </div>
+          
+      </nav>
+  </div>
+
+    <!-- Navbar END -->
+
+    <!-- content -->
+    <div class="main-image">
+      <img class="about-image" src="../img/Rectangle 85.svg" alt="image" />
+    </div>
+
+    <div class="aboutus-title">
+      <h1 class="ourmission">OUR MISSION</h1>
+      <p class="aboutme">Paws-itively Perfect,</p>
+      <p class="downme">Making Pet Parenthood Purr-fect</p>
+    </div>
+
+    <div class="about-title">
+      <div class="box">
+        <h1 class="ourmission">ABOUT PAT&PET</h1>
+        <p class="welcomepat">
+          Welcome to Pat&Pet, your premier destination for all things
+          pet-related. We're passionate about connecting pets with loving homes
+          and providing top-quality products for their care.
+        </p>
+        <p class="downme1">
+          At Pat&Pet, we believe every pet deserves a happy, healthy life. From
+          adoption services to a wide range of pet supplies, we're here to
+          support you in every step of your pet journey.
+        </p>
+        <p class="downme2">
+          Our team is dedicated to animal welfare and community involvement,
+          working closely with local rescue organizations to make a positive
+          impact.
+        </p>
+        <p class="downme3">
+          Join us in celebrating the love and joy that pets bring into our
+          lives. Together, let's make tails wag and hearts purr!
+        </p>
+      </div>
+    </div>
+
+    <img class="animal-img" src="../img/image 18.svg" alt="animal" />
+
+    <!-- content END -->
+
+    <!-- footer -->
+    <footer>
+      <div class="contact-info">
+        <p class="ga">INFO</p>
+        <p>📞 +62123456789</p>
+        <p>✉️ patandpet@gmail.com</p>
+      </div>
+      <div class="social-media">
+        <p class="ga">SOCIAL</p>
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="youtube"></i></a>
+      </div>
+      <div class="contact-form">
+        <p class="ga">CONTACT US</p>
+        <form id="contactForm">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Type your message..."
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </footer>
+
+   
+
+
+  <!-- Search bar -->
+<div class="search-container" id="searchContainer">
+  <input type="text" id="searchInput" placeholder="Search...">
+  <button id="closeSearchBtn" onclick="toggleSearch()">
+    <i data-feather="x"></i>
+  </button>
+</div>
+<!-- End of Search bar -->
+
+
+<div id="cart" class="cart">
+  <h2>Shopping Cart</h2>
+  <div id="cart-items"></div>
+  <div class="cart-actions">
+      <button onclick="toggleCart()">Cancel</button>
+      <button onclick="checkout()">Checkout</button>
+  </div>
+</div>
+
+
+  <!-- Sign-In Popup -->
+<div id="sign-in-popup" class="popup-overlay" style="display: none;">
+  <div class="popup-content">
+      <button class="close-btn" onclick="closeSignInPopup()">×</button>
+      <h2>Sign-In</h2>
+      <form id="sign-in-form">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Sign In</button>
+      </form>
+      <p>Don't have an account? <button onclick="showSignUpPopup()">Sign-Up</button></p>
+  </div>
+</div>
+
+<div id="sign-up-popup" class="popup-overlay" style="display: none;">
+  <div class="popup-content">
+      <button class="close-btn" onclick="closeSignUpPopup()">×</button>
+      <h2>Sign-Up</h2>
+      <form id="sign-up-form">
+          <label for="new-email">Email</label>
+          <input type="email" id="new-email" name="email" required>
+          <label for="new-password">Password</label>
+          <input type="password" id="new-password" name="password" required>
+          <button type="submit">Sign Up</button>
+      </form>
+  </div>
+</div>
+
+
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

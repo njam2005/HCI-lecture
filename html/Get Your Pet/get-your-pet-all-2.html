@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="../../css/styleguide.css"/>
+    <link rel="stylesheet" href="../../css/navbar.css"/>
+    <link rel="stylesheet" href="../../css/home-content.css"/>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <meta name="viewport" content="width = device-width, initial-scale=1.5"/>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Exa' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../../javascript/script.js"></script>
+  </head>
+  <body>
+    <div class="get-your-pet-cat">
+      <div class="overlap">
+        <div class="rectangle-all"></div>
+        <div class="div"></div>
+        <img class="cat" src="../../img/cat-2.png" />
+        <img class="img" src="../../img/cat-2.png" />
+        <div class="rectangle-2"></div> <div class="list-navigation">
+          <div class="list-btn">
+              <button class="btn-icon" onclick="toggleCart()">
+                <i data-feather="shopping-cart" class="large"></i>
+              </button>
+              <button class="btn-icon ">
+              <i data-feather="search" class="large" id="searchBtn" onclick="toggleSearch()"></i>
+              </button>
+              <button class="btn-icon" id="sign-in-btn" onclick="showSignInPopup()">
+              <i data-feather="user" class="large"></i>
+              </button>
+          </div>
+        </div>
+        <div id="cart" class="cart">
+          <h2>Shopping Cart</h2>
+          <div id="cart-items"></div>
+          <div class="cart-actions">
+              <button onclick="toggleCart()">Cancel</button>
+              <button onclick="checkout()">Checkout</button>
+          </div>
+        </div>
+        
+          <!-- Search bar -->
+        <div class="search-container" id="searchContainer">
+          <input type="text" id="searchInput" placeholder="Search...">
+          <button id="closeSearchBtn" onclick="toggleSearch()">
+            <i data-feather="x"></i>
+          </button>
+        </div>
+        <!-- End of Search bar -->
+        
+          <!-- Sign-In Popup -->
+        <div id="sign-in-popup" class="popup-overlay" style="display: none;">
+          <div class="popup-content">
+              <button class="close-btn" onclick="closeSignInPopup()">×</button>
+              <h2>Sign-In</h2>
+              <form id="sign-in-form">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" required>
+                  <button type="submit">Sign In</button>
+              </form>
+              <p>Don't have an account? <button onclick="showSignUpPopup()">Sign-Up</button></p>
+          </div>
+        </div>
+        
+        <div id="sign-up-popup" class="popup-overlay" style="display: none;">
+          <div class="popup-content">
+              <button class="close-btn" onclick="closeSignUpPopup()">×</button>
+              <h2>Sign-Up</h2>
+              <form id="sign-up-form">
+                  <label for="new-email">Email</label>
+                  <input type="email" id="new-email" name="email" required>
+                  <label for="new-password">Password</label>
+                  <input type="password" id="new-password" name="password" required>
+                  <button type="submit">Sign Up</button>
+              </form>
+          </div>
+        </div>
+        <div class="pat-pet-all">Pat<br />&amp;<br />Pet</div>
+        <img class="logo" src="../../img/logo-3.png" />
+        <div class="rectangle-home-all"></div>
+        <div class="text-wrapper">ALL</div>
+        <img class="kitty" src="../../img/kitty-1.png" />
+        <img class="kitty-2" src="../../img/kitty-1.png" />
+        <img class="kitty-3" src="../../img/kitty-1.png" />
+        <img class="kitty-4" src="../../img/kitty-1.png" />
+        <img class="kitty-5" src="../../img/kitty-1.png" />
+        <img class="cat-2" src="../../img/cat-2.png" />
+        <img class="cat-3" src="../../img/cat-1.png" />
+        <img class="cat-4" src="../../img/cat-1.png" />
+        <img class="pet" src="../../img/pet-1.png" />
+        <img class="pet-2" src="../../img/pet-1.png" />
+        <img class="pet-3" src="../../img/pet-1.png" />
+        <a href="../home.html">
+          <div class="HOME"><div class="text-wrapper-2">HOME</div></div>
+              </a>
+              <a href="../PetNeeds.html">
+              <div class="PET-NEEDS"><div class="text-wrapper-3">PET NEEDS</div></div>
+            </a>
+              <a href="../pawfund.html">
+                <div class="PAWFUND"><div class="text-wrapper-4">PAWFUND</div></div>
+                </a>
+              <a href="../aboutUs.html">
+              <div class="ABOUT-US"><div class="text-wrapper-5">ABOUT US</div></div>
+            </a>
+            <a href="../Get Your Pet/get-your-pet-all-1.html">
+              <div class="GET-YOUR-PET"><div class="text-wrapper-6">GET YOUR PET</div></div>
+            </a>
+          </div>
+          <a href="get-your-pet-dog-1.html">
+            <div class="dog-section-all"><div class="text-wrapper-7">DOGS</div>
+            </div>
+            </a>
+            <a href="get-your-pet-hamster.html">
+            <div class="hamster">
+              <div class="overlap-group-all"><div class="text-wrapper-8">HAMSTERS</div></div>
+            </div>
+            </a>
+            <a href="get-your-pet-cat-1.html">
+            <div class="cat-section">
+              <div class="overlap-2-all"><div class="text-wrapper-9">CATS</div></div>
+            </div>
+            </a>
+            <div class="overlap-wrapper">
+              <div class="overlap-2-chosen"><div class="text-wrapper-10">ALL</div></div>
+            </div>
+            <a href="get-your-pet-chameleon-1.html">
+            <div class="chameleon">
+              <div class="overlap-3-all"><div class="text-wrapper-11">CHAMELEONS</div></div>
+            </div>
+            </a>
+            <a href="get-your-pet-snake.html">
+            <div class="ular">
+              <div class="overlap-4-all"><div class="text-wrapper-12">SNAKES</div></div>
+            </div>
+            </a>
+      <div class="overlap-5">
+        <img class="rectangle-3" src="../../img/welsh-corgi-2.png" />
+        <div class="text-wrapper-13">Welsh Corgi</div>
+        <div class="text-wrapper-14">He made too much mess in my house.</div>
+        <img class="vector" src="../../img/vector-3.png" />
+      </div>
+      <div class="group">
+        <div class="overlap-6-all">
+          <div class="rectangle-4-all"></div>
+          <img class="union-3" src="../../img/Union.png" />
+          <div class="text-wrapper-15">Search</div>
+        </div>
+      </div>
+      <div class="overlap-7">
+        <img class="rectangle-5" src="../../img/cihuahua.png" />
+        <div class="text-wrapper-13">Chihuahua</div>
+        <p class="p">She bit my laptop and I had to use $500  from my pay
+            to repair it.</p>
+        <img class="vector" src="../../img/vector-3.png" />
+      </div>
+      <div class="overlap-group-wrapper">
+        <div class="overlap-8">
+          <img class="rectangle-5" src="../../img/welsh-corgi-1.png" />
+          <div class="text-wrapper-16">Welsh Corgi</div>
+          <img class="vector" src="../../img/vector-3.png" />
+          <p class="p">
+            My mom is moving in with me and she has an allergy,
+            sadly, I have to give Carly and Riri up.
+          </p>
+        </div>
+      </div>
+      <div class="overlap-9">
+        <img class="rectangle-3" src="../../img/milk-snake-1.png" />
+        <div class="text-wrapper-13">Milk Snake</div>
+        <div class="text-wrapper-14">Her name is Yumi. She is a sweet, calm, and healthy<br>
+            snake. I’m looking for a home that can take a good<br>
+            care of her.</div>
+        <img class="vector" src="../../img/vector-3.png" />
+      </div>
+      <div class="overlap-10">
+        <img class="rectangle-5" src="../../img/milk0snake.png" />
+        <div class="text-wrapper-13">Milk Snake</div>
+        <img class="vector" src="../../img/vector-3.png" />
+        <p class="p">Have lived for ten years and loves to eat.</p>
+      </div>
+      <a href="../form-reptil.html">
+          <div class="overlap-11">
+            <img class="rectangle-5" src="../../img/garter-snake.png" />
+            <div class="text-wrapper-13">Garter Snake</div>
+            <p class="p">I already have too many snakes, so I have to give him up
+                for adoption :(</p>
+            <img class="vector" src="../../img/vector-3.png" />
+          </div>
+      </a>
+      <div class="overlap-12">
+        <img class="img-2" src="../../img/russian-hamster.png" />
+        <div class="text-wrapper-13">Russian Dwarf Hamster</div>
+        <img class="vector" src="../../img/vector-3.png" />
+        <p class="p">
+            She often stares at me like this when I’m asleep. I can’t
+            stand it. It’s too creepy.
+        </p>
+      </div>
+      <div class="overlap-13">
+        <img class="rectangle-3" src="../../img/carpet-cham.png" />
+        <div class="text-wrapper-13">Carpet Chameleon</div>
+        <p class="p">
+            My work kept me busy lately and I’m afraid I will
+            continue to be busy. I live alone and I don’t have anyone
+            to take care of her.    
+        </p>
+        <img class="vector" src="../../img/vector-3.png" />
+      </div>
+      <div class="overlap-14">
+        <img class="img-2" src="../../img/russian-hamster-1.png" />
+        <div class="text-wrapper-13">Russian Dwarf Hamster</div>
+        <p class="p">
+            I already have too many hamsters, so I have to give him
+            up for adoption :(
+        </p>
+        <img class="vector" src="../../img/vector-3.png" />
+      </div>
+      <div class="rectangle-6-all"></div>
+      <div class="page-of-5"><div class="text-wrapper-17">Page 2 of 7</div></div>
+      <div class="frame">
+        <a href="get-your-pet-all-3.html">
+        <img class="ellipse" src="../../img/Ellipse-3.png" />
+        <img class="arrowbtn" src="../../img/Arrow 1.png" />
+        </a>
+        
+      </div>
+      <div class="frame-3">
+        <a href="get-your-pet-all-1.html">
+        <img class="ellipse" src="../../img/Ellipse-3.png" />
+        <img class="arrowbtn" src="../../img/arrow-2.png" />
+        </a>
+        
+      </div>
+      </div>
+     
+      
+    </div>
+  </body>
+</html>

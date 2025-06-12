@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/pawfund-form-css.css">
+    <script src="../javascript/pawfund-form-js.js"></script> 
+</head>
+<body>
+    <div class="background">
+        <div class="innerBackground">
+            <div class="logoText">
+                <img class="logo" src="../img/logo.png">
+                <div class="bigText">
+                    <h1 class="pawfundText1">PAWFUND</h1>
+                    <h1 class="pawfundText2">FORM</h1>
+                </div>
+            </div>
+            
+            <div class="container">
+                <form id="pawfundForm"> 
+                    <div class="a">
+                        <label class="firstName">FULL NAME</label>
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                    </div>
+                    <div class="bb">
+                        <div class="b">
+                            <label class="phoneNumber">PHONE NUMBER</label>
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                        </div>
+                        <div class="c">
+                            <label class="phoneNumber" for="email">EMAIL</label>
+                            <input type="text" id="email" name="email" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container2">
+                <form>
+                    <div class="lineOne">
+                        <div class="d">
+                            <label class="pet">PET'S NAME</label>
+                            <input type="text" name ="petName" id="petName" placeholder="Pet's Name">
+                        </div>
+                        
+                        <div class="d">
+                            <label class="pet">PET'S BREED</label>
+                            <input type="text" name ="petBreed" id="petBreed" placeholder="Pet's Breed">
+                        </div>
+
+                        <div class="e">
+                            <label class="gender">PET'S GENDER</label>
+                            <div class="f">
+                                <label class="g">
+                                    Male: <input type="radio" name="gender" value="Male">
+                                </label>
+                                <label class="g">
+                                    Female: <input type="radio" name="gender" value="Female">
+                                </label>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <div class="lineTwo">
+                        <label>PET'S HEALTH CONDITION</label>
+                        <input id="petHealthCondition" type="text" placeholder="Pet's Health Condition">
+                    </div>
+
+                    <div class="lineThree">
+                        <label>PET'S PICTURES</label>
+                        <button type="button" class="btn-warning">
+                            <i class="fa fa-upload"></i> Choose or drop photos
+                            <input id="petPictures" type="file">
+                        </button>
+                        <p>File must be in jpg, pdf, or png format.</p>
+                    </div>
+                </form>
+            </div>
+
+            <button type="button" onclick="validateAll()" class="submits">
+                <label>SUBMIT</label>
+                <input type="submit">
+            </button>
+
+            <a href="../html/pawfund.html">
+                <button type="button" onclick="goBack()" class="arrow">
+                    <i class="fas fa-arrow-left" style="font-size:36px"></i>
+                </button>
+            </a>
+        </div>
+        
+    </div>
+</body>
+</html>

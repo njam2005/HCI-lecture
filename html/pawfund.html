@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1.75"/>
+    <link rel="stylesheet" href="../css/styleguide.css"/>
+    <link rel="stylesheet" href="../css/home-content.css" />
+    <link rel="stylesheet" href="../css/pawfund-style.css"/>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lexend Exa' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="/javascript/script.js"></script>
+   
+  </head>
+  <body>
+        <div class="get-your-pet-cat">
+          <div class="div"></div>
+          <div class="rectangle-2"></div>
+          <div class="list-navigation">
+            <div class="list-btn">
+                <button class="btn-icon" onclick="toggleCart()">
+                  <i data-feather="shopping-cart" class="large"></i>
+                </button>
+                <button class="btn-icon ">
+                <i data-feather="search" class="large" id="searchBtn" onclick="toggleSearch()"></i>
+                </button>
+                <button class="btn-icon" id="sign-in-btn" onclick="showSignInPopup()">
+                <i data-feather="user" class="large"></i>
+                </button>
+            </div>
+          </div>
+          <div id="cart" class="cart">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-actions">
+                <button onclick="toggleCart()">Cancel</button>
+                <button onclick="checkout()">Checkout</button>
+            </div>
+          </div>
+          
+            <!-- Search bar -->
+          <div class="search-container" id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="closeSearchBtn" onclick="toggleSearch()">
+              <i data-feather="x"></i>
+            </button>
+          </div>
+          <!-- End of Search bar -->
+          
+            <!-- Sign-In Popup -->
+          <div id="sign-in-popup" class="popup-overlay" style="display: none;">
+            <div class="popup-content">
+                <button class="close-btn" onclick="closeSignInPopup()">×</button>
+                <h2>Sign-In</h2>
+                <form id="sign-in-form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Sign In</button>
+                </form>
+                <p>Don't have an account? <button onclick="showSignUpPopup()">Sign-Up</button></p>
+            </div>
+          </div>
+          
+          <div id="sign-up-popup" class="popup-overlay" style="display: none;">
+            <div class="popup-content">
+                <button class="close-btn" onclick="closeSignUpPopup()">×</button>
+                <h2>Sign-Up</h2>
+                <form id="sign-up-form">
+                    <label for="new-email">Email</label>
+                    <input type="email" id="new-email" name="email" required>
+                    <label for="new-password">Password</label>
+                    <input type="password" id="new-password" name="password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+          </div>
+          <div class="pat-pet">Pat<br />&amp;<br />Pet</div>
+          <img class="logo" src="../img/logo-1.png" />
+          <div class="rectangle-home-pawfund"></div>
+          
+
+          <a href="../html/home.html">
+          <div class="HOME"><div class="text-wrapper-2">HOME</div></a></div>
+          </a>
+
+          <a href="../html/PetNeeds.html">
+              <div class="PET-NEEDS"><div class="text-wrapper-3">PET NEEDS</div></div>
+          </a>
+          
+          <a href="../html/pawfund.html">
+          <div class="PAWFUND"><div class="text-wrapper-6">PAWFUND</div></div>
+          </a>
+
+          <a href="../html/aboutUs.html">
+          <div class="ABOUT-US"><div class="text-wrapper-5">ABOUT US</div></div>
+         </a>
+          <a href="../html/Get Your Pet/get-your-pet-all-1.html">
+          <div class="GET-YOUR-PET"><div class="text-wrapper-4-2">GET YOUR PET</div></div>
+          </a>
+          
+          <div class="overlap">
+            <div class="rectangle">
+                <img src="../img/dogBanner.png" class="pawfund-banner" />
+            </div>
+            <div class="text-wrapper-18">WHY DO WE DO THIS?</div>
+            <div class="text-box">
+              <p>
+                At Pat & Pet, we're driven by one simple truth: we believe every pet deserves<br>
+                love, care, and a forever home. That's why we're dedicated to connecting<br>
+                animals with compassionate families, providing top-quality products, and<br>
+                fostering the joy of the human-animal bond. Join us in making tails wag<br>
+                and hearts sing – because every pet deserves a happy ending.
+              </p>
+            </div>
+
+          <div class="pawfund-content">
+                <img class="banner-2" src="../img/Banner-2.png" />
+                <div class="text-wrapper-19">
+                  <p>
+                    Have a cute animal<br>
+                    you cannot take<br>
+                    care on your own?
+                  </p>
+                </div>
+                <div class="text-wrapper-20">
+                  <p>
+                    Have no worries!<br>
+                    We will take care of them :)
+                  </p>
+                </div>
+                <a href="../html/pawfund-form.html">
+                    <div class="cta-highlight">
+                      <div class="highlight">PAWFUND</div>
+                    </div>
+                    <div class="green-highlight"></div>
+                </a>
+          </div>
+
+          <div class="footer">
+            <div class="info-container">
+              <p>
+                INFO
+              </p>
+              <img class="phone-logo" src="../img/phone-logo.png"/>
+              <div class="text-wrapper-21">+628123456789</div>
+              <img class="email-logo" src="../img/email-logoo.png"/>
+              <div class="text-wrapper-22">patandpet@gmail.com</div>
+            </div>
+
+            <div class="social-container">
+              <p>
+                SOCIAL
+              </p>
+              <a href="">
+              <img class="insta-logo" src="../img/insta-logo.png"/>
+              </a>
+              <a href="">
+              <img class="x-logo" src="../img/x-logo.png"/>
+              </a>
+              <a href="">
+              <img class="meta-logo" src="../img/meta-logo.png"/>
+              </a>
+              <a href="">
+              <img class="youtube-logo" src="../img/youtube-logo.png"/>
+              </a>
+
+            </div>
+            <div class="contact-us-container">
+              <p>
+                CONTACT US
+              </p>
+              <form>
+                <input type="text" id="name" placeholder="name" class="name-input"/><br>
+                <input type="text" id="email" placeholder="email" class="email-input"/><br>
+                <input type="text" id="message" placeholder="type your message here ..." class="message-input"/><br>
+                <button id="submitBtn" class="submit-button">Send Message</button>
+              </form>
+            </div>
+          </div>
+
+          
+
+
+            
+        </div>
+  </body>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Needs</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+    <!-- Feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../javascript/script.js"></script>
+
+    <!-- My CSS Style  -->
+    <link rel="stylesheet" href="../css/headerStyle.css">
+    <!-- <link rel="stylesheet" href="myStyle/contentStyle.css"> -->
+    <link rel="stylesheet" href="../css/descStyle.css">
+
+
+
+</head>
+<body>
+    
+<!-- Navbar Start -->
+<div class="navigation-bar">
+    <nav class="navbar">
+        <div class="logo-container">
+             <img src="../img/Logo 1.png" alt="Logo" class="logo">
+             <div class="site-title">
+                <span class="title-part">Pat</span>
+                <span class="ampersand">&</span>
+                <span class="title-part">Pet</span>
+             </div>
+        </div>
+        <div class="list-navigation">
+            <div class="list-btn">
+                <button class="btn-icon" onclick="toggleCart()">
+                <i data-feather="shopping-cart" class="large"></i>
+                </button>
+                <button class="btn-icon ">
+                <i data-feather="search" class="large" id="searchBtn" onclick="toggleSearch()"></i>
+                </button>
+                <button class="btn-icon" id="sign-in-btn" onclick="showSignInPopup()">
+                <i data-feather="user" class="large"></i>
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li class="Home"><a href="home.html">HOME</a></li></a>
+                <li class="pet-needs"><a href="PetNeeds.html">PET NEEDS</a></li>
+                <li class="pawfund"><a href="pawfund.html">PAWFUND</a></li>
+                <li class="getpet"><a href="Get Your Pet/get-your-pet-all-1.html">GET YOUR PET</a></li>
+                <li class="about"><a href="AboutUs.html"> ABOUT US</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+</div>
+
+<!-- Search bar
+<div class="search-container" id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="closeSearchBtn" onclick="toggleSearch()">
+      <i data-feather="x"></i>
+    </button>
+  </div> -->
+  <!-- End of Search bar -->
+
+<!-- Navbar End -->
+
+<!-- content -->
+<div class="content">
+    <div class="container-content">
+        <button class="menu-button" data-target="dropdown1">Pet Food <i data-feather="chevron-down"></i></button>
+        <div id="dropdown1" class="dropdown-content">
+            <a href="#" class="filter" data-category="cat">Cat Food</a>
+            <a href="#" class="filter" data-category="dog">Dog Food</a>
+            <a href="#" class="filter" data-category="chameleon">Chameleon Food</a>
+            <a href="#" class="filter" data-category="snake">Snake Food</a>
+            <a href="#" class="filter" data-category="hamster">Hamster Food</a>
+        </div>
+        <button class="menu-button" data-target="dropdown2">Pet Accessories <i data-feather="chevron-down"></i></button>
+        <div id="dropdown2" class="dropdown-content">
+            <a href="#" class="filter" data-category="cat-accessories">Cat Accessories</a>
+            <a href="#" class="filter" data-category="dog-accessories">Dog Accessories</a>
+            <a href="#" class="filter" data-category="chameleon-accessories">Chameleon Accessories</a>
+            <a href="#" class="filter" data-category="snake-accessories">Snake Accessories</a>
+            <a href="#" class="filter" data-category="hamster-accessories">Hamster Accessories</a>
+        </div>
+
+        <a href="#" class="menu-button filter" data-category="cage">Pet Cage</a>
+
+        <button class="menu-button" data-target="dropdown4">Pet Toy <i data-feather="chevron-down"></i></button>
+        <div id="dropdown4" class="dropdown-content">
+            <a href="#" class="filter" data-category="cat-toys">Cat Toys</a>
+            <a href="#" class="filter" data-category="dog-toys">Dog Toys</a>
+            <a href="#" class="filter" data-category="hamster-toys">Hamster Toys</a>
+        </div>
+        <a href="#" class= "menu-button filter" data-category="all">All</a>
+    </div>
+
+
+    <div class="detail-product">
+
+        <a href="PetNeeds.html" class= "add3">Back</a>
+        
+        <h1 class="title-atas">Friskies Pate Wet Cat Food with Beef and Liver</h1>
+
+        <img class="image-detail" src="../img/image 3.svg" alt="">
+
+        <div class="down-title">
+            <button class="overview">overview</button>
+            <p>Ingredients</p>
+            <p>Rp.40.000,00</p>
+            <button class="add">add</button>
+        </div>
+
+        <p class="kata">Highlights</p>
+
+        <div class="Highlights">
+            <ul>
+                <li>100% Complete and Balanced Nutrition for Adults Cats</li>
+                <li>Essential Nutrients Support the Maintenance </li>
+                <li>High in Protein to Help Support Strong Muscles</li>
+                <li>Made with Taurine to Help Support Clear, Healthy Vision</li>
+                <li>Crafted in Purina-Owned Facilities in USA</li>
+            </ul>
+        </div>
+
+        <p class="kata2">Product Description</p>
+        
+        <div class="product-description">
+            <p>With liver and beef in this smooth paté, your cat will think they’ve struck a treasure of gold! Yummy, brown, beefy gold. With liver!</p>
+        </div>
+
+        <p class="kata2">Similiar Product</p>
+
+        <div class="similiar-product">
+            <div class="kemiripan">
+                <img class="gambar1" src="../img/image 4.svg" alt="" >
+                <p class="merek">Friskies Farm Pate Wet Cat Food with Salmon</p>
+                <p class="harga">Rp45.500,00</p>
+                <button class="add1" onclick="addToCart(this)">Add</button>
+            </div>
+            <div class="kemiripan">
+                <img class="gambar1" src="../img/image 9.svg" alt="" >
+                <p class="merek">Whiskas Canned in Jelly with Chicken 390 gr for 1+ Years Old Cat</p>
+                <p class="harga">Rp56.500,00</p>
+                <button class="add1" onclick="addToCart(this)">Add</button>
+            </div>
+            <div class="kemiripan">
+                <img class="gambar1" src="../img/image 12.svg" alt="" >
+                <p class="merek">MeowMix Original Choice</p>
+                <p class="harga">Rp123.435,00</p>
+                <button class="add1" onclick="addToCart(this)">Add</button>
+            </div>
+        </div>
+
+    </div>
+<!-- content END -->
+
+
+ <!-- Feather Icon -->
+
+ <script src="../javascript/script.js"></script>
+ <script>
+     feather.replace();
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Form Reptil</title>
+    <link rel="stylesheet" href="../css/adoption-form-reptil-style.css">
+    <!-- <link rel="stylesheet" href="../css/adoption-form-mammalia-style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <script src="../javascript/adoption-form.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/adoption-form.js"></script>
+</head>
+<body>
+    <!-- Navbar Start -->
+<div class="navigation-bar">
+    <nav class="navbar">
+        <div class="logo-container">
+             <img src="../img/logo-2.png" alt="Logo" class="logo">
+             <div class="site-title">
+                <span class="title-part">Pat</span>
+                <span class="ampersand">&</span>
+                <span class="title-part">Pet</span>
+             </div>
+            </div>
+            <div class="list-navigation">
+                <div class="list-btn">
+                    <button class="btn-icon" onclick="toggleCart()">
+                    <i data-feather="shopping-cart" class="large"></i>
+                    </button>
+                    <button class="btn-icon ">
+                    <i data-feather="search" class="large" id="searchBtn" onclick="toggleSearch()"></i>
+                    </button>
+                    <button class="btn-icon" id="sign-in-btn" onclick="showSignInPopup()">
+                    <i data-feather="user" class="large"></i>
+                    </button>
+                </div>
+                <ul class="nav-links">
+                    <li class="Home"><a href="home.html">HOME</a></li></a>
+                    <li class="pet-needs"><a href="PetNeeds.html">PET NEEDS</a></li>
+                    <li class="pawfund"><a href="pawfund.html">PAWFUND</a></li>
+                    <li class="getpet"><a href="Get Your Pet/get-your-pet-all-1.html">GET YOUR PET</a></li>
+                    <li class="about"><a href="AboutUs.html"> ABOUT US</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </div>
+
+    <!-- Search bar -->
+    <div class="search-container" id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="closeSearchBtn" onclick="toggleSearch()">
+        <i data-feather="x"></i>
+        </button>
+    </div>
+    <!-- End of Search bar -->
+
+    <!-- Navbar End -->
+
+    <div class="big-box" id="adoptionForm-box">
+        <!-- box judul -->
+        <div class="titlebox" id="titleBox">
+            <img src="../img/banner-ijo.png" alt="">
+        </div>
+        <!-- kolom bagian kiri -->
+        <div class="left-part">
+            <form action="" method="GET" class="form" id="left-form">
+                <!-- upload image -->
+                <div id="input-picture">
+                    <img src="../img/add-hijau.png" alt="" id="imgAdd">
+                    <input type="file" name="image" id="image">
+                </div>
+                <!-- baris input nama -->
+                <div class="input-place" id="input-name">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <!-- baris input umur -->
+                <div class="input-place" id="input-age">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" placeholder="Age" min="1">
+                </div>
+                <!-- baris input gender -->
+                <div class="input-place" id="input-gender">
+                    <label for="gender">Gender</label>
+                    <input type="radio" name="gender" id="gender-male" value="Male" class="male">
+                    <label for="gender-male" class="male label-gender" id="label-male">Male</label>
+                    <input type="radio" name="gender" id="gender-female" value="Female" class="female">
+                    <label for="gender-female" class="female label-gender" id="label-female">Female</label>
+                </div>
+                <!-- baris input reason -->
+                <div class="input-place" id="input-reason">
+                    <label for="reason">Reason to Adopt</label>
+                    <input type="text" name="reason" id="reason" placeholder="Your Reason">
+                </div>
+                <!-- baris input email -->
+                <div class="input-place" id="input-tellus">
+                    <label for="tellus">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="your_email@gmail.com">
+                </div>
+            </form>
+        </div>
+
+        <!-- kolom bagian kanan -->
+        <div class="right-part">
+            <form action="" method="GET" class="form" id="right-form">
+                <!-- masukkan alamat -->
+                <div class="input-place-right" id="input-address">
+                    <div class="label-title">
+                        <label for="address">Home's Address</label>
+                    </div>
+                    <div class="material">
+                        <input type="text" name="address" id="address" placeholder="Jalan your_addres">
+                    </div>
+                </div>
+                <!-- masukkan tempat dan waktu pickup -->
+                <div class="input-place-right" id="input-pickup">
+                    <div class="label-title">
+                        <label for="pickup">Pickup Time</label><br>
+                    </div>
+                    <div class="material" id="material-pickup">
+                        <label for="pickupdate">Date: </label>
+                        <input type="date" name="pickupdate" id="pickupdate">
+                        <label for="pickuptime">Time: </label>
+                        <input type="time" name="pickuptime" id="pickuptime">
+                    </div>
+                </div>
+                <!-- masukkan pet needs
+                    tombol 'Buy' bisa muncul kalo udah kasih centang setidaknya 1 
+                -->
+                <div class="input-place-right" id="input-petneeds">
+                    <div class="label-title">
+                        <label for="petneeds">Pet Needs</label><br>
+                    </div>
+                    <div class="material" id="material-petneeds">
+                        <input type="checkbox" name="petneeds" id="petfood" value="1" onclick="showBtn()">
+                        <label for="petfood">Pet Food</label><br>
+                        <input type="checkbox" name="petneeds" id="petaccessories" value="1" onclick="showBtn()">
+                        <label for="petaccessories">Pet Accessories</label><br>
+                        <input type="checkbox" name="petneeds" id="petcage" value="1" onclick="showBtn()">
+                        <label for="petcage">Pet Cage</label><br>
+                        <input type="checkbox" name="petneeds" id="pettoy" value="1" onclick="showBtn()">
+                        <label for="pettoy">Pet Toy</label><br>
+                        <a href="../html/PetNeeds.html" id="petneedsButton">
+                            <button type="button" id="petneedsBtn" style="display: none;">Buy?</button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- tombol untuk ke halaman sebelumnya -->
+        <a href="../html/form-mammalia.html" class="left-arrow"><img src="../img/Left-arrow.png" alt=""></a>
+        <!-- tombol adopt -->
+        <div class="adopt-button">
+            <a href="../html/thank-you-page-2.html">
+                <button type="submit" class="button" onclick="validateAll()">ADOPT</button>
+            </a>
+        </div>
+    </div>
+    <!-- footer -->
+     <div id="footer-box">
+        <img src="../img/footer-ijo.png" alt="">
+     </div>
+</body>
+</html>
