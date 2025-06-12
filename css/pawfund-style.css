@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.large{
+  z-index: 1;
+}
+.list-btn{
+  margin-left: 1160px;
+}
+.search-container{
+  z-index: 1;
+}
+.get-your-pet-cat {
+  position: relative;
+  width: 1440px;
+  height: 1900px;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin:0;
+  padding: 0;
+}
+.text-wrapper-18{
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 190px;
+  width: 599px;
+  font-family: "Inter";
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 90px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.text-box{
+  position: absolute;
+  width: 1028px;
+  height: 290px;
+  top: 303px;
+  left: 217px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+}  
+
+.text-box p{
+  text-align: justify;
+  margin: 60px 0 0 40px;
+  font-family: "Inter";
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: normal;
+  white-space: nowrap;
+  font-weight: 100;
+}
+
+.banner-2{
+  position: absolute;
+  top: 784px;
+  left: 115px;
+  width: 512px;
+  height: 400px;
+}
+
+.text-wrapper-19 p{
+  position: relative;
+  width: 618px;
+  top: 725px;
+  left: 744px;
+  font-family: "Lexend Exa";
+  font-weight: 800;
+  color: #7D5A50;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.text-wrapper-20 p{
+  position: absolute;
+  width: 618px;
+  top: 936px;
+  left: 744px;
+  font-family: "Karla";
+  
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  font-weight: 100;
+}
+
+.cta-highlight{
+  position: absolute;
+  top: 1043px;
+  left: 747px;
+  border: 2px solid black;
+  padding: 16px 21px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 37px;
+  width: 228px;
+  height: 65px;
+  z-index: 1;
+}
+.highlight{
+  font-family: "Inter";
+  margin-top: 4%;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: normal;
+  white-space: nowrap;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.green-highlight{
+  position: absolute;
+  top: 1073px;
+  left: 727px;
+  padding: 16px 21px;
+  border-radius: 15px;
+  background-color: #395B4B;
+  text-align: center;
+  margin-top: 37px;
+  width: 228px;
+  height: 65px;
+}
+
+.footer{
+  position: relative;
+  top: 1200px;
+  bottom: 0px;
+  background-color: #E27690;
+  max-width: 100%;
+  height: 560px;
+  width: 1440px;
+  margin-bottom: 0;
+}  
+
+.info-container{
+  position:absolute;
+  top: 70px;
+  left: 300px;
+}
+.info-container p{
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.text-wrapper-21{
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15%;
+  color: white;
+}
+
+
+.phone-logo{
+
+  position:relative;
+  top: 25px;
+  
+  
+}
+.text-wrapper-22{
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15%;
+  color: white;
+}
+.email-logo{
+  position:relative;
+  top: 25px;
+}
+
+.social-container{
+  position:absolute;
+  top: 70px;
+  left: 650px;
+  p{
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+  }
+}
+
+.x-logo{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.meta-logo{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.youtube-logo{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.contact-us-container{
+  position:absolute;
+  top: 70px;
+  left: 900px;
+  p{
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+  }
+}
+.name-input{
+  margin-top: 10px;
+  padding: 3px;
+  padding-left: 5px;
+  width: 200px;
+  height: 25px;
+  background-color: #F5DAD2;
+}
+.email-input{
+  padding: 3px;
+  padding-left: 5px;
+  margin-top: 10px;
+  width: 250px;
+  height: 25px;
+  background-color: #F5DAD2;
+}
+
+
+.message-input{
+  padding: 3px;
+  padding-left: 5px;
+  margin-top: 10px;
+  width: 250px;
+  height: 100px;
+  background-color: #F5DAD2;
+}
+
+.submit-button{
+  margin-top: 10px;
+  background-color: #7D5A50;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+.div {
+  position: absolute;
+  width: 1440px;
+  height: 136px;
+  top: 0;
+  left: 0;
+  background-color: #fff8e3;
+}
+.rectangle-2 {
+  position: absolute;
+  width: 1440px;
+  height: 138px;
+  top: 0;
+  left: 0;
+  background-color: #fff8e3;
+}
+.user-icon {
+  position: absolute;
+  width: 51px;
+  height: 56px;
+  top: 13px;
+  left: 1327px;
+}
+.search-icon {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 13px;
+  left: 1232px;
+}
+.troli-icon {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 11px;
+  left: 1136px;
+}
+.pat-pet {
+  position: absolute;
+  width: 190px;
+  height: 87px;
+  top: 23px;
+  left: 86px;
+  font-family: "Lexend Exa";
+  font-weight: 700;
+  color: #b4846c;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: -4.5px;
+  line-height: 35px;
+}
+.logo {
+  position: absolute;
+  width: 131px;
+  height: 111px;
+  top: 12px;
+  left: 4px;
+  object-fit: cover;
+}
+.rectangle-home-pawfund {
+  position: absolute;
+  width: 180px;
+  height: 60px;
+  top: 80px;
+  left: 825px;
+  background-color: #b4846c;
+  border-radius: 12px 12px 0px 0px;
+}
+.PET-NEEDS {
+  position: absolute;
+  width: 205px;
+  height: 44px;
+  top: 92px;
+  left: 588px;
+  z-index: 1;
+}
+.get-your-pet-cat .HOME {
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  top: 92px;
+  left: 464px;
+  z-index: 1;
+}
+
+.text-wrapper-2 {
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  top: -1px;
+  left: 0;
+  font-family: "Inter";
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.text-wrapper-3 {
+  position: absolute;
+  width: 205px;
+  height: 44px;
+  top: -1px;
+  left: 0;
+  font-family: "Inter";
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.get-your-pet-cat .PAWFUND {
+  position: absolute;
+  width: 182px;
+  height: 44px;
+  top: 92px;
+  left: 793px;
+}
+
+.text-wrapper-6 {
+  position: absolute;
+  width: 248px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  font-family: "Inter";
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.ABOUT-US {
+  position: absolute;
+  width: 179px;
+  height: 44px;
+  top: 92px;
+  left: 1224px;
+  z-index: 1;
+}
+.text-wrapper-5 {
+  position: absolute;
+  width: 179px;
+  height: 44px;
+  top: -1px;
+  left: 0;
+  font-family: "Inter";
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.GET-YOUR-PET {
+  position: absolute;
+  width: 248px;
+  height: 44px;
+  top: 92px;
+  left: 976px;
+  z-index: 1;
+}
+.text-wrapper-4-2 {
+  position: absolute;
+  width: 182px;
+  height: 44px;
+  top: -1px;
+  left: 60px;
+  font-family: "Inter" ;
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.overlap {
+  position: absolute;
+  width: 1440px;
+  height: 523px;
+  top: 0;
+  left: 0;
+}
+.rectangle {
+  position: absolute;
+  width: 1440px;
+  height: 374px;
+  top: 138px;
+  left: 0;
+  background-color: #b4846c;
+}

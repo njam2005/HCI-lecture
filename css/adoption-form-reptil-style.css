@@ -1,0 +1,677 @@
+/* pet form */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Exa", sans-serif;
+}
+
+.big-box{
+    padding: 0;
+    width: 100%;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titlebox{
+    width: 100%;
+    /* height: auto; */
+    background-color: rgba(186, 205, 146, 1);
+
+    text-align: center;
+    align-content: center;
+    /* grid-column: 1 / span 2; */
+}
+
+.titlebox img{
+    display: block;
+    width: 100%;
+    height: 300px;
+    /* margin: 100px; */
+    /* object-fit: cover; */
+}
+
+/* .titlebox h1{
+    color: white;
+    font-size: 70px;
+} */
+
+.main-body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* gap: 10px 15px; */
+}
+
+.side-box{
+    height: 650px;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 10px;
+    background-color: #ffff;
+}
+
+#left-box{
+    grid-column: 1;
+}
+
+#right-box{
+    grid-column: 2;
+}
+
+.table{
+    width: 100%;
+    border: 3px;
+    background-color: rgb(139, 148, 120);
+
+    gap: 10px;
+}
+
+tr td{
+    background-color: rgb(139, 148, 120);
+
+    background-color: white;
+}
+
+td{
+    padding: 10px;
+}
+
+th{
+    padding: 10px;
+    background-color: rgb(139, 148, 120);
+
+    background-color: white;
+    text-align: left;
+    font-size: 19px;
+}
+
+#information-table{
+    height: 53%;
+}
+
+#information-table th{
+    width: 25%;
+}
+
+#right-table{
+    text-align: left;
+    height: 100%;
+}
+
+#img-table{
+    width: 100%;
+    height: 40%;
+}
+
+#img-table td{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#img-table img{
+    object-fit: fill;
+}
+
+#petNeeds-coloumn{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 94%;
+}
+
+#petNeeds-coloumn p{
+    padding: 10px 15px;
+    margin: 10px;
+    width: 200px;
+    background-color: rgba(186, 205, 146, 1);
+
+    border-radius: 15px;
+    font-size: 25px;
+    color: white;
+}
+
+.btn{
+    background-color: rgba(186, 205, 146, 1);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-column: 2;
+    justify-self: end;
+    height: 60px;
+    width: 60px;
+    text-decoration: none;
+    margin: 70px 30px 0 0;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.btn img{
+    object-fit: cover;
+    object-position: 0;
+}
+
+#buyBtn{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: rgba(186, 205, 146, 1);
+    border-radius: 15px;
+    width: 60px;
+    align-self: flex-end;
+    font-size: 25px;
+    margin-top: 25px;
+    color: white;
+}
+
+#footer-box{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(186, 205, 146, 1);
+
+    margin-top: 30px;
+}
+
+#footer-box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* adoption form */
+#adoptionForm-box{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#titleBox{
+    grid-column: 1 / span 2;
+}
+
+.left-part{
+    width: 95%;
+    padding: 15px;
+}
+
+.pic {
+    width: 600px;
+    height: 320px;
+}
+
+#left-form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 300px 50px 50px 50px 100px 50px;
+    gap: 5px;
+    padding: 5px;
+    background-color: rgb(139, 148, 120);
+
+}
+
+#left-form label{
+    align-content: center;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.input-place{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-content: center;
+    background-color: rgb(139, 148, 120);
+
+    column-gap: 5px;
+    width: 99%;
+}
+
+.input-place label{
+    background-color: white;
+    height: 40px
+}
+
+#input-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+}
+
+#imgAdd{
+    position:absolute;
+    z-index: 1;
+    width: 150px;
+    height: 165px;
+}
+
+#image:hover{
+    cursor: pointer;
+}
+
+#image{
+    position: relative;
+    z-index: 99;
+    opacity: 0;
+    width: 150px;
+    height: 165px;
+}
+
+#input-reason label{
+    height: 90px;
+}
+
+#input-gender{
+    grid-template-columns: 20% 10% 30% 10% 30%;
+    grid-template-rows: 50px;
+}
+
+.male{
+    justify-content: center;
+    align-content: center;
+}
+
+.female{
+    justify-content: center;
+    align-content: center;
+}
+
+.label-gender{
+    width: 100px;
+}
+
+#label-male{
+    background-color: rgb(139, 148, 120);
+
+}
+
+#label-female{
+    background-color: rgb(139, 148, 120);
+
+}
+
+#input-gender input{
+    justify-self: right;
+}
+
+.input-place label{
+    border: none;
+    padding: 5px;
+    gap: 5px;
+}
+
+.input-place input{
+    border: none;
+    padding: 5px;
+}
+
+/* right part */
+.right-part{
+    width: 93%;
+    padding: 15px;
+}
+
+#right-form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px 200px 250px;
+    gap: 5px;
+    /* padding: 5px; */
+    background-color: rgb(139, 148, 120);
+   
+    height: 635px;
+}
+
+.input-place-right{
+    background-color: rgb(139, 148, 120);
+
+    gap: 5px;
+}
+
+
+#input-address{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 90px;
+    padding: 5px;
+}
+
+#address{
+    width: 97%;
+    height: 80px;
+    border: none;
+}
+
+#input-pickup{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 140px;
+    padding: 5px;
+}
+
+#material-pickup{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto;
+    column-gap: 15px;
+}
+
+#material-pickup label{
+    justify-self: end;
+    width: 30%;
+    align-self: center;
+    font-size: 18px;
+}
+
+#material-pickup input{
+    justify-self: start;
+    align-self: center;
+    width: 60%;
+    height: 50%;
+    border: none;
+}
+
+#input-petneeds{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 190px;
+    padding: 5px;
+}
+
+#material-petneeds label{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#material-petneeds input{
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+#material-petneeds input:hover{
+    cursor: pointer;
+}
+
+#material-petneeds label:hover{
+    cursor: pointer;
+}
+
+#petneedsBtn{
+    padding: 10px 25px;
+    background-color: rgba(186, 205, 146, 1);
+    border: none;
+    border-radius: 15px;
+    font-size: 25px;
+    color: white;
+    width: 110px;
+    height: 50px;
+}
+
+#petneedsButton{
+    position: relative;
+    left: 70%;
+    top: 10%;
+}
+
+#petneedsBtn:hover{
+    cursor: pointer;
+}
+
+.label-title{
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.material{
+    background-color: white;
+}
+
+.left-arrow{
+    background-color: rgb(139, 148, 120);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-self: start;
+    align-self: center;
+    height: 60px;
+    width: 60px;
+    text-decoration: none;
+    margin: 30px 0px 0 40px;
+    margin-right: 100px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* .arrow {
+    margin-right: 100px;
+} */
+.left-arrow img{
+    object-fit: cover;
+}
+
+.button{
+    grid-column: 2;
+    grid-row: 3;
+    background-color: rgb(139, 148, 120);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    align-self: center;
+    height: 70px;
+    width: 200px;
+    text-decoration: none;
+    margin: 10px 30px;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    font-size: 25px;
+    color: white;
+}
+
+.adopt-button {
+    position: relative;
+    height: 100px;
+    width: 200px;
+    bottom: 5px;
+    right: -380px;
+    margin-top: 30px;
+    /* background-color: black;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+  }
+  
+  .navigation-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff8e3;
+    font-family: "inter", sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff8e3;
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    margin-top: 18px;
+  }
+  
+  .site-title {
+    display: flex;
+    flex-direction: column;
+    color: rgba(186, 205, 146, 1);
+    font-weight: bold;
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 2rem;
+  }
+  
+  .title-part {
+    line-height: 1;
+    margin-left: 5px;
+  }
+  
+  .ampersand {
+    margin-left: 17px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    /* margin-left: 2px; */
+  }
+  
+  .nav-links li {
+    /* margin-left: 90px;
+    margin-right: 50px; */
+    width: 100%;
+    font-size: 26px;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .list-btn {
+    margin-left: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-top: 40px;
+    margin-bottom: 0;
+    justify-content: space-between;
+  }
+  
+  .Home {
+    margin-left: 200px;
+  }
+  
+  .pet-needs {
+    background-color: rgba(186, 205, 146, 1);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 60px;
+    margin-right: 40px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .Home1 {
+    background-color: rgba(186, 205, 146, 1);
+    padding-top: 5px;
+    padding-left: 10px;
+    /* padding-right: 10px; */
+    margin-left: 60px;
+    margin-right: 40px;
+    width: 20px;
+    height: 40px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .pet-needs:hover {
+    color: rgba(90, 54, 48, 0.591);
+    cursor: pointer;
+  }
+  
+  .pet-needs1 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .pawfund {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .getpet {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .about {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .nav-links a:hover {
+    color: rgba(186, 205, 146, 1);
+  }
+  
+  .btn-icon {
+    background-color: #fff8e3;
+    /* width: 100px;
+      height: 100px; */
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 0px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .list-btn {
+    width: 150px;
+    height: 50px;
+    margin-left: 950px;
+  }
+  
+  .btn-icon:hover {
+    background-color: rgba(186, 205, 146, 1);
+  }
+  
+  .icon {
+    width: 45px;
+    height: 45px;
+    color: rgba(186, 205, 146, 1);
+  }
+  
+  .large {
+    width: 50px;
+    height: 50px;
+  }
+
+  .buy {
+    width: 200px;
+    height: 100px;
+    margin-left: 500px;
+    padding-top: 40px;
+}
+  

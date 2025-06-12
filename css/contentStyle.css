@@ -1,0 +1,560 @@
+.content{
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 100%;
+    column-gap: 10px;
+    height: 100%;
+}
+
+.list-makanan{
+    overflow-y: auto;
+}
+
+/* dropdown menu */
+.container-content {
+    background-color: white;
+    overflow: hidden;
+    margin: 20px 10px 23px 20px;
+    padding: 20px 0 190px 0px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    height: 500px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0; 
+  }
+  
+  .menu-button {
+    background-color: white;
+    font-size: 18px;
+    white-space: nowrap;
+    width: 19rem;
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+    display: block;
+    border: none;
+    text-align: left;
+  }
+  
+  .menu-button:hover {
+    background-color: rgb(229, 229, 229);
+  }
+  
+  .dropdown-content {
+    display: none;
+    background-color: white;
+    padding-left: 20px;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(229, 229, 229);
+  }
+
+/* end */
+
+
+/* Sidebar  */
+.container-content{
+    background-color: white;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 23px;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 190px;
+    padding-left: 0px;
+    border-radius: 10px;
+}
+
+.pet-food{
+    background-color:  white;
+    font-size: 18px;
+    white-space: nowrap;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 280px;
+    padding-left: 20px;
+    margin: 0px;
+    cursor: pointer;
+    display: block;
+}
+
+.pet-food:hover{
+    background-color: rgb(229, 229, 229);
+}
+
+.Pet-Accessories{
+    background-color:  white;
+    font-size: 18px;
+    white-space: nowrap;
+    display: block;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 280px;
+    padding-left: 20px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.Pet-Accessories:hover{
+    background-color:  rgb(229, 229, 229);
+}
+
+.Pet-Cage{
+    background-color: white;
+    font-size: 18px;
+    white-space: nowrap;
+    display: block;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 280px;
+    padding-left: 20px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.Pet-Cage:hover{
+    background-color:  rgb(229, 229, 229);
+}
+
+.Pet-Toy{
+    background-color: white;
+    font-size: 18px;
+    white-space: nowrap;
+    display: block;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 280px;
+    padding-left: 20px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.Pet-Toy:hover{
+    background-color:  rgb(229, 229, 229);
+}
+
+.All{
+    background-color: white;
+    font-size: 18px;
+    white-space: nowrap;
+    display: block;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 280px;
+    padding-left: 20px;
+    margin-bottom: 1px;
+    cursor: pointer; 
+}
+
+.All:hover{
+    background-color:  rgb(229, 229, 229);
+}
+
+/* sidebar end */
+.container-makanan{
+    background-color: white;
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 10px;
+    /* padding-left: 10px; */
+    padding-bottom: 15px;
+    margin-top: 23px;
+    margin-right: 7px;
+    position: relative;
+    height: 235px;
+    word-wrap: break-word;
+}
+
+p{
+    padding-left: 10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img:not(.logo){
+    width: 180px;
+    height: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    /* object-fit: cover; */
+    cursor: pointer;
+}
+
+.merek{
+    font-family: inter;
+    font-size: 14px;
+    width: 220px;
+}
+
+.harga{
+    font-family: inter;
+    /* display: inline-block; */
+    width: 100px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-right: 0px;
+    /* vertical-align: bottom; */
+}
+
+.add{
+    background-color: #B4846C;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    margin-left: 155px;
+    vertical-align: top;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none ;
+}
+
+
+
+
+.cart {
+    position: fixed;
+    top: 20%;
+    right: 5%;
+    width: 600px;
+    background-color: white;
+    border: 1px solid #B4846C;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+#cart-items {
+    max-height: 400px; /* Set the maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.cart h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cart-actions button {
+    background-color: #B4846C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-actions button:hover {
+    background-color: #8B5D4D;
+}
+
+
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #B4846C;
+}
+
+.cart-item span {
+    display: block; /* Ensure text spans take full width */
+    text-align: center; /* Center text */
+}
+
+.cart-item .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-item-image {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-controls button {
+    background-color: #B4846C;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover {
+    background-color: #8B5D4D;
+}
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}
+
+
+.checkout-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.checkout-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.checkout-section {
+    width: 48%;
+}
+
+.payment-method h2,
+.shipping-address h2,
+.cart-summary h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.payment-options label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.payment-options img {
+    display: block;
+    margin-right: auto;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.shipping-address form {
+    display: flex;
+    flex-direction: column;
+}
+
+.shipping-address input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.shipping-address button {
+    background-color: #B4846C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shipping-address button:hover {
+    background-color: #8B5D4D;
+}
+
+.cart-summary {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cart-summary-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.totals {
+    margin-top: 20px;
+}
+
+.totals p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.pay-button {
+    width: 100%;
+    background-color: #B4846C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.pay-button:hover {
+    background-color: #8B5D4D;
+}
+
+/* Sign-In Popup Styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #FFF8E3;
+    padding: 20px;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.popup-content button {
+    background: #B4846C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background: #b3794a;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.search-container {
+    display: none;
+    position: absolute;
+    top: 10px; /* Adjust this value according to your layout */
+    right: 40px; /* Adjust this value according to your layout */
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #searchInput {
+    width: 500px; /* Adjust this value according to your layout */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #closeSearchBtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  

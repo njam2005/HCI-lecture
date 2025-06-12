@@ -1,0 +1,301 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background-color:rgb(180, 132, 108);
+}
+
+.lexend-exa {
+  font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chivo  {
+    font-family: "Chivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+}
+
+.logoText {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 17%;
+}
+
+.background {
+    margin-top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 2050px;
+    display: block;
+    background-color: rgb(180, 132, 108);
+}
+
+.innerBackground {
+    margin-top: 30px;
+    margin: 50px;
+    padding-top: 50px;
+    background-color: white;
+    width: 93%;
+    height: 1900px;
+}   
+
+.logo {
+    width: 300px;
+    height: 300px;
+}
+
+.bigText {
+    display: block;
+    line-height: 1px;
+}
+
+.pawfundText1 {
+    letter-spacing: -10px;
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 109px;
+    color: rgb(186, 205, 146);
+}
+
+.pawfundText2 {
+    letter-spacing: -30px;
+    font-family: "Lexend Exa", sans-serif;
+    margin-right: 100px;
+    font-size: 200px;
+    color: rgb(186, 205, 146);
+}
+
+.container {
+    width: 800px;
+    height: 350px;
+    padding-top: 100px;
+    padding-left: 100px;
+    margin-left: 17%;
+    border-radius: 50px;
+    background-color: rgb(255, 216, 216);
+}
+
+.firstName {
+    font-family: "Chivo", sans-serif;
+    font-size: 30px;
+    font-weight: 400px;
+    font-weight: 600;
+    color:rgb(180, 132, 108);
+    display: block;
+}
+
+.phoneNumber {
+    margin-top: 40px;
+    font-family: "Chivo", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color:rgb(180, 132, 108);
+    display: block;
+}
+
+.a input {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(245, 218, 210);
+    margin-right: 120px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.bb {
+    display: flex;  
+}
+
+.b {
+    display: block;
+    -webkit-text-stroke: 2px (244, 209, 61);
+    border-color:rgb(180, 132, 108);
+}
+
+.b input {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(245, 218, 210);
+    margin-right: 120px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.c input {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(245, 218, 210);
+    margin-right: 150px;
+    padding: 10px;
+    font-size: 20px;
+    outline: 0;
+}
+
+.lineOne {
+    display: flex;
+    margin-right: 20px;
+}
+
+.d {
+    display: block;
+}
+
+.container2 {
+    background-color: rgb(161, 189, 164);
+    width: 830px;
+    height: 700px;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: 17%;
+    padding-top: 100px;
+    padding-left: 70px;
+}
+
+.pet {
+    margin-top: 10px;
+    font-family: "Chivo", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color:rgb(125, 90, 80);
+    display: block;
+}
+
+.lineOne input {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(186, 205, 146);
+    margin-right: 100px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.lineOne label {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-family: "Chivo", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color:rgb(125, 90, 80);
+    display: block;
+}
+
+.gender {
+    margin-top: 40px;
+}
+
+.f {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.e input {
+    width: 20px;
+    height: 20px;
+}
+
+.f label {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.lineTwo {
+    margin-top: 50px;
+
+}
+
+.lineTwo label {
+    margin-top: 40px;
+    font-family: "Chivo", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color:rgb(125, 90, 80);
+    display: block;
+}
+
+.lineTwo input {
+    width: 700px;
+    height: 230px;
+    background-color: rgb(186, 205, 146);
+    padding: 10px;
+}
+
+.lineThree label {
+    margin-top: 40px;
+    font-family: "Chivo", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color:rgb(125, 90, 80);
+    display: block;
+}
+
+.btn-warning {
+    background-color: rgb(85, 142, 254);
+    font-family: "Chivo", sans-serif;
+    padding: 11px 16px;
+    font-size: 15px;
+    margin-top: 10px;
+    position: relative;
+    border: 0;
+}
+
+.btn-warning input[type="file"] {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(5);
+    opacity: 0;
+}
+
+.submits input[type="submit"] {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(5);
+    opacity: 0;
+}
+
+.lineThree p {
+    margin-top: 10px;
+    color: rgb(125, 90, 80);
+    font-family: "Chivo", sans-serif;
+}
+
+.submits {
+    background-color: rgb(226, 118, 144);
+    position: relative;
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    float: right;
+    margin-right: 220px;
+    margin-top: 50px;
+}
+
+.arrow {
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    background-color: rgb(226, 118, 144);
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 50px;
+}
