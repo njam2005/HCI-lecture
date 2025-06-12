@@ -1,4 +1,4 @@
-Project Title
+Pat&Pet
 
 A responsive website for an online Petshop built using HTML, CSS, and JavaScript.
 
